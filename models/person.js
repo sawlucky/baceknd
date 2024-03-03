@@ -25,6 +25,14 @@ const PersonSchema = new mongoose.Schema({
   salary: {
     type: Number,
   },
+  username: {
+    required: true,
+    type: String,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
 });
 
 module.exports = mongoose.model("Person", PersonSchema);
